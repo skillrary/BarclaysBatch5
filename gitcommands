@@ -1,0 +1,257 @@
+  1  cd test
+    2  dir
+    3  exit
+    4  mkdir gitbasic
+    5  cd gitbasic
+    6  cd ..
+    7  exit
+    8  mkdir gitbasic
+    9  cd gitbasic
+   10  git -version
+   11  git --version
+   12  git init
+   13  dir
+   14  git status
+   15  git log
+   16  git add 1.txt
+   17  git status
+   18  git rm --cached 1.txt
+   19  ls
+   20  git status
+   21  git add 1.txt
+   22  git status
+   23  git commit
+   24  git config --global user.email "mithun@skillrary.com"
+   25  git config --global user.name "Mithun Ashok"
+   26  git commit
+   27  git commit
+   28  git status
+   29  git log
+   30  history
+   31  clear
+   32  git log
+   33  git status
+   34  git status
+   35  git status
+   36  clear
+   37  git status
+   38  git add a*
+   39  git status
+   40  git restore --staged a*
+   41  git status
+   42  git add *
+   43  git status
+   44  git restore --staged *
+   45  git status
+   46  git add .
+   47  git status
+   48  dir
+   49  git restore --staged *
+   50  git status
+   51  git add a.txt
+   52  git status
+   53  git status
+   54  git restore a.txt
+   55  git status
+   56  git status
+   57  git add a.txt
+   58  git status
+   59  git status
+   60  git restore a.txt
+   61  git status
+   62  git add a.txt
+   63  git status
+   64  git status
+   65  git restore a.txt
+   66  git commit -m "This is my second commit"
+   67  git status
+   68  git log
+   69  git status
+   70  git add a.txt
+   71  git status
+   72  git commit -m "This is my third commit"
+   73  git status
+   74  git log
+   75  git checkout e4569a7964487e1a4c84512f95c7db69b4b1cf07
+   76  git log
+   77  git switch -
+   78  git log
+   79  git checkout 76cd8f2c4e8113da623d5039248d595806dc494a
+   80  git log
+   81  git checkout master
+   82  git log
+   83  history
+   84  git log
+   85  git log --oneline
+   86  clear
+   87  git log --oneline
+   88  git checkout 76cd8f2
+   89  git checkout master
+   90  git stage
+   91  git stage --help
+   92  git checkout --help
+   93  git status
+   94  git status
+   95  ls
+   96  ls
+   97  git status
+   98  ls
+   99  ls -lah
+  100  git config --global core.editor notepad.exe
+  101  git status
+  102  git status
+  103  git add .
+  104  git status
+  105  git commit
+  106  git log
+  107  git checkout f9597ecb54f495b50bc46a7d3f98dc5c0a087d8f
+  108  git tag V1.0
+  109  git log
+  110  git switch -
+  111  git log
+  112  git checkout V1.0
+  113  git checkout master
+  114  git log --oneline
+  115  git tag -d V1.0
+  116  git log --oneline
+  117  git history
+  118  history
+  119  git log --oneline
+  120  cd ..
+  121  mkdir test2
+  122  cd test2
+  123  git init
+  124  git init
+  125  cd ..
+  126  cd gitbasic/
+  127  dir
+  128  git status
+  129  git log
+  130  git checkout 76cd8f2c4e8113da623d5039248d595806dc494a
+  131  git tag V1
+  132  git checkout master
+  133  git status
+  134  git log --oneline
+  135  git status
+  136  git add .
+  137  git commit -m "Added 4th line to a.txt"
+  138  git status
+  139  git log --oneline
+  140  git tag v2.3
+  141  git log --oneline
+  142  git checkout V1
+  143  git branch
+  144  git checkout -b bugfix
+  145  dir
+  146  git status
+  147  git status
+  148  git add .
+  149  git commit -m "Fixed bug v1"
+  150  git status
+  151  git log --oneline
+  152  git checkout master
+  153  git log --oneline
+  154  git log --oneline -all
+  155  git log --oneline --all
+  156  git checkout V1
+  157  git branch featurex
+  158  git checkout featurex
+  159  git status
+  160  git add .
+  161  git commit -m "Created c.txt and added a line"
+  162  git log --oneline
+  163  git log --oneline --all
+  164  git branch
+  165  git checkout master
+  166  git branch
+  167  git merge bugfix
+  168  git status
+  169  git merge --abort
+  170  git merge bugfix
+  171  git status
+  172  git commit -m
+  173  git commit -m "Resolved merge conflict"
+  174  git add .
+  175  git commit -m "Resolved merge conflict"
+  176  git status
+  177  git log --oneline
+  178  git log --oneline --all
+  179  git log --oneline --all --graph
+  180  git log --oneline --all
+  181  git status
+  182  git status
+  183  git add .
+  184  git status
+  185  git log --oneline
+  186  history
+  187  history
+  188  git status
+  189  git log --oneline
+  190  git checkout -b featurey
+  191  git status
+  192  git add d.txt
+  193  git commit -m "Added d.txt"
+  194  git log --oneline
+  195  git status
+  196  git add .
+  197  git commit -m "added more lines"
+  198  git status
+  199  git log --oneline
+  200  git checkout master
+  201  git merge featurey
+  202  git status
+  203  git log --oneline
+  204  history
+  205  git log --oneline --all --graph
+  206  git branch
+  207  git branch -d featurex
+  208  git branch -D featurex
+  209  git branch
+  210  git log --oneline --all --graph
+  211  cd ..
+  212  git clone https://github.com/MythMithun/snake.git
+  213  dir
+  214  cd snake
+  215  git status
+  216  git log --oneline
+  217  git status
+  218  git add .
+  219  git commit -m "Changed apple color to white"
+  220  git log --oneline
+  221  git push
+  222  git log --oneline
+  223  git status
+  224  git log --oneline
+  225  git pull
+  226  git log --oneline
+  227  git fetch
+  228  git log --oneline
+  229  git log --oneline --all
+  230  git pull
+  231  git log --oneline --all
+  232  history
+  233  cd ..
+  234  cd gitbasic/
+  235  dir
+  236  git log --oneline
+  237  git remote
+  238  cd ..
+  239  cd snake
+  240  git remote
+  241  git remote -v
+  242  cd ..
+  243  cd gitbasic/
+  244  dir
+  245  git remote
+  246  git remote add origin https://github.com/MythMithun/gitbasicforbarclays.git
+  247  git remote
+  248  git remote -v
+  249  git push
+  250  git push -u
+  251  git push -u origin master
+  252  git branch
+  253  git push bugfix
+  254  git push -u bugfix
+  255  git push -u originbugfix
+  256  git push -u origin bugfix
+  257  git push -u origin featurey
